@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-# set -e
+#!/bin/sh
 
 ICON_CONNECTED="󰞀"
 ICON_DISCONNECTED="󰻌"
