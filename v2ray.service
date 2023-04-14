@@ -1,0 +1,11 @@
+[Unit]
+Description=V2Ray Service
+Documentation=https://www.v2fly.org/
+After=network.target nss-lookup.target
+
+[Service]
+EnvironmentFile = /home/ehsan/.config/polybar/plugins/polybar_v2ray/service_env
+ExecStart=/usr/bin/v2ray run -config $CONFIG_PATH
+Restart=on-failure
+RestartPreventExitStatus=23
+
